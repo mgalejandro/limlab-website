@@ -1,0 +1,39 @@
+html
+    head
+        title
+        include ../components/people_head.jade
+    body
+        include ../components/header.jade
+        #title.container
+            h1.row.s12
+                span.part2 Firstname | 
+                span.part1 Lastname
+        #basics.container
+            .row
+                .col.s8
+                    |   <p>firstname.lastname <img src="images/at.gif" class="at"> ucsf.edu</p>
+                    |   <p><em>Position (e.g., Graduate Student)</em></p>
+                .col.s4
+                    img.responsive-img.z-depth-1(src="images/puffy.jpg")
+
+            #education
+                h3 Education
+
+                p 2019-Present
+                .degrees Ph.D., Biophysics
+                .degrees University of California, San Francisco
+
+                p 2015-2019
+                .degrees B.A., Molecular and Cell Biology
+                .degrees University of California, Berkeley
+
+                h3 Research Interests
+                p Joining computational and synthetic biology to design and engineer cell therapies.
+
+                h3 Awards
+                p 2022 Award Name
+
+                h3 Publications
+                p Daniels, K.G., Wang, S., Simic, M.S., <strong>Bhargava, H.K.</strong>, Capponi, SD., Tonai, Y., Yu, W., Bianco, S., Lim, W.A. "Exploring the rules of chimeric antigen receptor phenotypic output using combinatorial signaling motif libraries and machine learning" BioRxiv. (2021). doi: 10.1101/2022.01.04.474985.
+                 
+        include ../components/footer.jade
