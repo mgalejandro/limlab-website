@@ -1,0 +1,33 @@
+html
+    head
+        title
+        include ../components/people_head.jade
+    body
+        include ../components/header.jade
+        #title.container
+            h1.row.s12
+                span.part2 Chanelle | 
+                span.part1 Shepherd
+        #basics.container
+            .row
+                .col.s8
+                    |   <p>Chanelle.Shepherd <img src="images/at.gif" class="at"> ucsf.edu</p>
+                    |   <p><em>Staff Research Associate II</em></p>
+                .col.s4
+                    img.responsive-img.z-depth-1(src="images/chanelleshepherd.jpg")
+
+            #education
+                h3 Education
+
+                p 2021-present
+                .degrees PROPEL post-baccalaureate scholar 
+                .degrees University of California, San Francisco
+
+                p 2015-2020
+                .degrees B.S., Biochemistry & Molecular Biology 
+                .degrees University of California, Santa Cruz 
+
+                h3 Research Interests
+                p Neuroimmunology and Cell-based Therapy Design
+                 
+        include ../components/footer.jade
