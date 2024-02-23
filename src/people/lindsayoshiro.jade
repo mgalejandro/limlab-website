@@ -1,0 +1,29 @@
+html
+    head
+        title
+        include ../components/people_head.jade
+    body
+        include ../components/header.jade
+        #title.container
+            h1.row.s12
+                span.part2 Lindsay | 
+                span.part1 Oshiro
+        #basics.container
+            .row
+                .col.s8
+                    |   <p>lindsay.oshiro <img src="images/at.gif" class="at"> ucsf.edu</p>
+                    |   <p><em>Junior Specialist</em></p>
+                .col.s4
+                    img.responsive-img.z-depth-1(src="images/lindsayoshiro.jpg")
+
+            #education
+                h3 Education
+
+                p 2019-2023
+                .degrees B.S., Biochemistry & Molecular Biology
+                .degrees University of California, Davis
+
+                h3 Publications
+                p Liu J, Hsu SW, Guo F, Oshiro L, Yan XM, Chen CH. OTUD5 Mediates GPX4 Stability and Ferroptosis in Renal Tubular Cells During Ischemia-Reperfusion Injury (2023). Journal of the American Society of Nephrology, 767 (Suppl): SA-PO157.
+                 
+        include ../components/footer.jade
