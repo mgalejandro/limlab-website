@@ -24,7 +24,7 @@ label {
     color: $border-color;
     position: absolute;
     top: 0.8rem;
-    left: $gutter-width / 2;
+    left: $gutter-width * 0.5;
     font-size: 1rem;
     cursor: text;
     @include transition(.2s ease-out);
@@ -425,7 +425,7 @@ input[type=checkbox][disabled]:first-child ~ .lever:active:after {
     right: 0;
     font-size: 23px;
     @extend [class^="mdi-"];
-    @extend .mdi-navigation-arrow-drop-down:before;
+    @extend .mdi-navigation-arrow-drop-down, :before;
   }
 }
 

@@ -1,4 +1,6 @@
 /*** Buttons ***/
+@use "sass:math";
+
 $button-background-disabled: #DFDFDF;
 $button-color: color("blue", "base") !default;
 $button-color-disabled: #9F9F9F;
@@ -55,8 +57,8 @@ $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width 
 $num-cols: 12 !default;
 $gutter-width: 1.5rem !default;
 
-$element-top-margin: $gutter-width/3 !default;
-$element-bottom-margin: ($gutter-width*2)/3 !default;
+$element-top-margin: math.div($gutter-width, 3) !default;
+$element-bottom-margin: math.div($gutter-width*2, 3) !default;
 
 
 /*** Navbar ***/
@@ -90,7 +92,7 @@ $h6-fontsize: 1rem !default;
 // Flowtext
 $range : $large-screen - $small-screen !default;
 $intervals: 20 !default;
-$interval-size: $range / $intervals !default;
+$interval-size: math.div($range, $intervals) !default;
 
 /*** Collections ***/
 $collection-border-color: #e0e0e0 !default;
