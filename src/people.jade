@@ -3,6 +3,7 @@ html
 		title People | Lim Lab
 		include ./components/head.jade
 		<link type="text/css" rel="stylesheet" href="css/people.css"  media="screen,projection"/>
+
 	body
 		include ./components/header.jade
 		#title.container
@@ -16,139 +17,665 @@ html
 					img(src="images/labphoto_2022.jpeg").responsive-img
 
 			#principal.row
-				.col.s12.m4
-					h3.name 
-						a(href="people/wendell.html") Wendell Lim
-					h4.position Principal Investigator
+				//- .col.s12
+
+				h3.header Principal Investigator
+					.row
+						.col.s3
+							<br>
+							img.responsive-img.z-depth-1(src="people/images/wendell2022.jpeg")
+						.col.s8
+							<br>
+							h3.name 
+								a(href="people/wendell.html") Wendell Lim, PhD
+							h4.position Byers Distinguished Professor	
+							h4.position UCSF Department of Cellular and Molecular Pharmacology
+							h4.position Director, <a href="https://celldesigninstitute.org">UCSF Cell Design Institute</a>
+							h4.position Director, UCSF Center for Synthetic Immunology (NIH IOTN-i3 Center)
+							p
+								a(href="people/wendell.html") Read more about Wendell
+				<br>
+				h3.header Lab Administrator
+				.row
 					h3.name Noleine Blizzard
-					h4.position Administrator
-				
+					h4.position
+						a(href="mailto:noleine.blizzard@ucsf.edu") noleine.blizzard <img(src="people/images/at.gif" class="at")> ucsf.edu
+					<br>
 
-			.row
-				ul
-					.col.s12.m6
-						li.member
-							a(href="people/adamstevens.html") Adam Stevens
-						li.member
-							a(href="people/arseniadeguzman.html") Arsenia deGuzman
-						li.member
-							a(href="people/ceciliazhang.html") Cecilia Zhang
-						li.member
-							a(href="people/chanelleshepherd.html") Chanelle Shepherd
-						li.member
-							a(href="people/devanshah.html") Devan Shah
-						li.member
-							a(href="people/donwang.html") Don Wang
-						//- li.member
-							//- a(href="people/gregallen.html") Greg Allen
-						li.member
-							a(href="people/hershbhargava.html") Hersh Bhargava
-						//- li.member
-							a(href="people/jeremyvillafuerte.html") Jeremy Villafuerte
-						li.member
-							a(href="people/josiahgerdts.html") Josiah Gerdts
-						li.member
-							a(href="people/jungminlee.html") Jungmin Lee
-						//- li.member
-							a(href="people/kikim.html") Ki Kim
-						li.member
-							a(href="people/lindsayoshiro.html") Lindsay Oshiro
-						li.member
-							a(href="people/mikailalejandro.html") Mikail Alejandro
+				h3.header Senior Scientists
+				.row
+					ul
+						.col.s12.m6
+							li.member
+								a(href="people/ricardoalmeida.html") Ricardo Almeida, PhD
+							li.member
+								a(href="people/donwang.html") Don Wang, PhD
+							li.member Alessio Mallozi, PhD
 
-					.col.s12.m6
 
-						li.member
-							a(href="people/milossimic.html") Milos Simic
-						li.member
-							a(href="people/nickshin.html") Nick Shin
-						li.member
-							a(href="people/nishreddy.html") Nish Reddy
-						li.member
-							a(href="people/oscarcampos.html") Oscar Campos
-						li.member
-							a(href="people/pilarlopez.html") Pilar Lopez
-						li.member
-							a(href="people/philippauerstein.html") Philip Pauerstein
-						li.member
-							a(href="people/ricardoalmeida.html") Ricardo Almeida
-						li.member
-							a(href="people/simsidhu.html") Sim Sidhu
-						li.member
-							a(href="people/rileystockard.html") Riley Stockard
-						li.member
-							a(href="people/toshimichiyamada.html") Toshimichi Yamada
-						li.member
-							a(href="people/weiyu.html") Wei Yu
-						li.member
-							a(href="people/yurietonai.html") Yurie Tonai
+				h3.header Postdoctoral & Clinical Fellows
+				.row
+					ul
+						.col.s12.m6
+							li.member
+								a(href="people/oscarcampos.html") Oscar Campos, PhD
+							li.member
+								a(href="people/josiahgerdts.html") Josiah Gerdts, MD, PhD
+							li.member
+								a(href="people/jungminlee.html") Jungmin Lee, PhD
+							li.member Iain Martyn, PhD
+							li.member Alessandro Migliara, PhD
+							li.member
+								a(href="people/philippauerstein.html") Philip Pauerstein, MD, PhD
+							li.member
+								a(href="people/nishreddy.html") Nish Reddy, PhD
+						.col.s12.m6
+							li.member
+								a(href="people/nickshin.html") Nick Shin, PhD
+							li.member
+								a(href="people/milossimic.html") Milos Simic, PhD
+							li.member
+								a(href="people/adamstevens.html") Adam Stevens, PhD
+							li.member Coralie Trentesaux, PhD
+							li.member Yini Xiao, PhD
+							li.member
+								a(href="people/toshimichiyamada.html") Toshimichi Yamada, PhD
+							li.member Shaohua Zhang, PhD
 
-			#principal.row
-				.col.s12.m4
-					h3.name 
-						a(href="people/alumni.html") Lim Lab Alumni
-		#alumni.container
-			h3
-				Lab Photos
-			#collage.row.clearfix
-				.col.s12.m4
-					.photo
-						img(src="images/people/alumni/alumni-0.jpg")
-					//	a.modal-trigger.waves-effect.waves-light(href="#alumni0")
-					//#alumni0.modal
-					//	img(src="images/people/alumni/alumni-0.jpeg")
-					.photo
-						img(src="images/people/alumni/alumni-1.jpeg")
-					.photo
-						img(src="images/people/alumni/alumni-2.jpeg")
-					.photo
-						img(src="images/people/alumni/alumni-3.jpeg")
-					.photo
-						img(src="images/people/alumni/alumni-4.jpeg")
-					.photo
-						img(src="images/people/alumni/alumni-5.jpeg")
-					.photo
-						img(src="images/people/alumni/alumni-6.jpeg")
-				.col.s12.m4
-					.photo
-						img(src="images/people/alumni/alumni-7.jpeg")
-					.photo
-						img(src="images/people/alumni/alumni-8.jpg")
-					.photo
-						img(src="images/people/alumni/alumni-9.jpg")
-					.photo
-						img(src="images/people/alumni/alumni-10.jpg")
-					.photo
-						img(src="images/people/alumni/alumni-11.jpg")
-					.photo
-						img(src="images/people/alumni/alumni-12.jpg")
-					.photo
-						img(src="images/people/alumni/alumni-13.jpg")
-					.photo
-						img(src="images/people/alumni/alumni-14.jpg")
-					.photo
-						img(src="images/people/alumni/alumni-15.jpg")
-					.photo
-						img(src="images/people/alumni/alumni-16.jpg")
-				.col.s12.m4
-					.photo
-						img(src="images/people/alumni/alumni-17.png")
-					.photo
-						img(src="images/people/alumni/alumni-18.jpg")
-					.photo
-						img(src="images/people/alumni/alumni-19.jpg")
-					.photo
-						img(src="images/people/alumni/alumni-20.jpg")
-					.photo
-						img(src="images/people/alumni/alumni-21.jpg")
-					.photo
-						img(src="images/people/alumni/alumni-22.jpg")
-					.photo
-						img(src="images/people/alumni/alumni-23.jpg")
-					.photo
-						img(src="images/people/alumni/alumni-24.jpg")
-					.photo
-						img(src="images/people/alumni/alumni-25.jpg")
+				h3.header Doctoral Students
+				.row
+					ul
+						.col.s12.m6
+							li.member
+								a(href="people/hershbhargava.html") Hersh Bhargava
+							li.member Isiac Orr
+
+						.col.s12.m6
+
+							li.member
+								a(href="people/devanshah.html") Devan Shah
+							li.member
+								a(href="people/rileystockard.html") Riley Stockard
+
+				h3.header Technical Staff
+				.row
+					ul
+						.col.s12.m6
+							li.member
+								a(href="people/mikailalejandro.html") Mikail Alejandro
+							li.member Grace Baird
+							li.member Adrian Barrera-Velasquez
+							li.member Harkiran Bhasin
+							li.member Arsenia DeGuzman
+							li.member
+								a(href="people/pilarlopez.html") Pilar Lopez
+							li.member Ben Ng
+							li.member
+								a(href="people/lindsayoshiro.html") Lindsay Oshiro
+
+						.col.s12.m6
+							li.member
+								a(href="people/chanelleshepherd.html") Chanelle Shepherd
+							li.member
+								a(href="people/simsidhu.html") Sim Sidhu
+							li.member
+								a(href="people/yurietonai.html") Yurie Tonai
+							li.member An Tran
+							li.member
+								a(href="people/weiyu.html") Wei Yu, MD, PhD
+							li.member
+								a(href="people/ceciliazhang.html") Cecilia Zhang
+							li.member Robert Zhu
+
+				<hr>
+				h3.header Lim Lab Alumni
+				.row
+					ul
+						.col.s12
+							li.alum 
+								h3.name Greg Allen, MD, PhD
+								p Postdoc (2015-2023)
+								p Subsequently: Assistant Professor, UCSF
+								p
+									a(href="https://allen-lab.org/") Allen Lab Website
+
+							li.alum 
+								h3.name Ki Kim, PhD
+								p Graduate Student (2017-2023)
+
+							li.alum 
+								h3.name Jeremy Villafuerte
+								p Specialist (2020-2023)
+
+							li.alum 
+								h3.name Kyle Daniels, PhD
+								p Postdoc (2015-2022)
+								p Subsequently: Assistant Professor, Stanford University
+								p
+									a(href="https://danielssynbio.net/") Daniels Lab Website
+
+							li.alum 
+								h3.name Rogelio Hernandez-Lopez, PhD
+								p Postdoc (2016-2021)
+								p Subsequently: Assistant Professor, Stanford University
+								p
+									a(href="https://www.hl-lab.org/") Hernandez-Lopez Lab Website
+
+							li.alum 
+								h3.name Jason Duecker
+								p Staff Research Associate (2019-2022)
+								p Subsequently: Lyell Immunopharma
+
+							li.alum 
+								h3.name Wesley Mckeithan, PhD
+								p Postdoc (2018-2020)
+								p Subsequently: Scientist II, Maze Therapeutics
+
+							li.alum 
+								h3.name Aileen Li, PhD
+								p Postdoc (2018-2020)
+								p Subsequently: Principal Scientist, Lyell Immunopharma
+
+							li.alum 
+								h3.name Joseph Choe, PhD
+								p Graduate Student (2014-2020)
+								p Subsequently: Scientist II, Arsenal Bio
+
+							li.alum 
+								h3.name Maia Yoshida
+								p Research Assistant (2018-2020)
+								p Subsequently: Master’s Degree in STEM Education Student, King's College London
+
+							li.alum 
+								h3.name Geoffrey O'Donoghue, PhD
+								p Postdoc (2014-2020)
+								p Subsequently: Scientist, Cero Therapeutics
+
+							li.alum 
+								h3.name Jasper Williams, PhD
+								p Graduate Student (2014-2020)
+								p Subsequently: Scientist, ArsenalBio
+
+							li.alum 
+								h3.name Nicholas Frankel, PhD
+								p Postdoc (2015-2019)
+								p Subsequently: Scientist II, Senti Biosciences
+
+							li.alum 
+								h3.name Satoshi Toda, PhD
+								p Postdoc (2015-2019)
+								p Subsequently: Assistant Professor, Nano Life Science Institute, Kanazawa University, Japan
+								p
+									a(href="https://sites.google.com/view/satoshitodalab/home") Toda Lab Website
+
+							li.alum 
+								h3.name Ashley Koegel, MD
+								p Postdoc (2017-2019)
+								p Subsequently: Medical Director, Celgene
+
+							li.alum 
+								h3.name Vivian Garcia
+								p Visiting Scholar (2018-2019)
+								p Subsequently: Biological and Biomedical Sciences PhD Student, Harvard University
+
+							li.alum 
+								h3.name Nira Krasnow
+								p Research Technician (2018-2019)
+								p Subsequently: Medical Student, Harvard Medical School
+
+							li.alum 
+								h3.name Jonathan Brunger, PhD
+								p Postdoc (2015-2019)
+								p Subsequently: Assistant Professor, Vanderbilt University, School of Engineering
+								p
+									a(href="https://brungerlab.com/") Brunger Lab Website
+
+							li.alum 
+								h3.name Joan Garbarino
+								p Lab Manager (2009-2019)
+								p Subsequently: Retired
+
+							li.alum 
+								h3.name Sarah Levinson
+								p Postdoc (2016-2019)
+								p Subsequently: Scientist, Kyverna Therapeutics
+
+							li.alum 
+								h3.name Igal Sterin
+								p Research Technician (2015-2018)
+								p Subsequently: Molecular Biology Ph.D. Student, University of Utah
+
+							li.alum 
+								h3.name Crystal Ghosh
+								p Research Technician (2016-2018)
+								p Subsequently: Research Associate, Calico Life Sciences
+
+							li.alum 
+								h3.name Jakub Rajniak
+								p Postdoctoral Fellow (2016-2017)
+								p Subsequently: Postdoctoral Fellow, Stanford University
+
+							li.alum 
+								h3.name Lukasz Bugaj
+								p Postdoc (2014-2017)
+								p Subsequently: Assistant Professor, University of Pennsylvania, Dept. of Bioengineering
+								p
+									a(href="https://www.bugajlab.com/") Bugaj Lab Website
+
+							li.alum 
+								h3.name Kole Roybal
+								p Postdoc (2013-2017)
+								p Subsequently: Assistant Professor, University of California, San Francisco, Dept. of Microbiology and Immunology
+								p
+									a(href="https://www.roybal-lab.org/") Roybal Lab Website
+
+							li.alum 
+								h3.name Isabel Kolinko
+								p Postdoc (2015-2017)
+								p Subsequently: Professur, Institute for Microbiology, ETH Zurich
+
+							li.alum 
+								h3.name Russell Gordley
+								p Postdoc (2009-2016)
+								p Subsequently: Synthetic Biology Group Leader, Senti Biosciences
+
+							li.alum 
+								h3.name Leonardo Morsut
+								p Postdoc (2012-2016)
+								p Subsequently: Assistant Professor, Dept. of Stem Cell Biology and Regenerative Medicine, University of Southern California
+								p
+									a(href="http://morsutlab.usc.edu/") Morsut Lab Website
+
+							li.alum 
+								h3.name Amir Mitchell
+								p Postdoc (2012-2016)
+								p Subsequently: Assistant Professor, University of Massachusetts Medical School
+								p
+									a(href="https://mitchell-lab.umassmed.edu/") Mitchell Lab Website
+
+							li.alum 
+								h3.name Scott Coyle
+								p Graduate Student (2009-2016)
+								p Subsequently: Assistant Professor, UW-Madison
+
+							li.alum 
+								h3.name Levi Rupp
+								p Postdoc (2014-2016)
+								p Subsequently: Associate Director, Janssen Pharmaceutica
+
+							li.alum 
+								h3.name Krista McNally
+								p Specialist (2010-2016)
+								p Subsequently: Scientist, Chimera Bioengineering
+
+							li.alum 
+								h3.name Xin Xiong
+								p Postdoc (2013-2015)
+								p Subsequently: Lead Scientist, Agenovir Corporation
+
+							li.alum 
+								h3.name Kara Helmke
+								p Education Coordinator (2013-2015)
+								p Subsequently: Lecturer in Bioengineering, Stanford University
+
+							li.alum 
+								h3.name Chia-Yung Wu
+								p Postdoc (2010-2015)
+								p Subsequently: Scientist, Amgen
+
+							li.alum 
+								h3.name Whitney Walker
+								p Junior Specialist (2015)
+
+							li.alum 
+								h3.name Jared Toettcher
+								p Postdoc (2010-2015)
+								p Subsequently: Assistant Professor of Molecular Biology, Princeton University
+								p
+									a(href="http://molbio.princeton.edu/faculty/molbio-faculty/795-toettcher") Toettcher Website
+
+							li.alum 
+								h3.name Elias Puchner
+								p Postdoc (2010-2014)
+								p Subsequently: Assistant Professor of Physics, University of Minnesota
+								p
+									a(href="http://www.physics.umn.edu/people/puchner.html") Puchner Website
+
+							li.alum 
+								h3.name Lei Stanley Qi
+								p Systems Biology Fellow (2012-2014)
+								p Subsequently: Assistant Professor of Bioengineering, Stanford University
+
+							li.alum 
+								h3.name Lingfeng (Kitty) Liu
+								p Postdoc (2010-2014)
+
+							li.alum 
+								h3.name Hyun Youk
+								p Postdoc (2011-2014)
+								p Subsequently: Assistant Professor of Physics & Nanobiology, Delft University of Technology, the Netherlands
+								p
+									a(href="http://www.youklab.org") Youk Lab website
+
+							li.alum 
+								h3.name Jesse Zalatan
+								p Postdoc (2008-2014)
+								p Subsequently: Assistant Professor of Chemistry, University of Washington, Seattle
+								p
+									a(href="http://depts.washington.edu/chem/people/faculty/zalatan.html") Zalatan Lab website
+
+							li.alum 
+								h3.name Thomas Stevens
+								p Graduate Student (2012-2014)
+								p Subsequently: Masters degree in Biophysics, UCSF
+
+							li.alum 
+								h3.name Jaline Gerardin
+								p Graduate Student (2007-2014)
+								p Subsequently: Research Scientist, Institute for Disease Modeling, Intellectual Ventures Labs
+
+							li.alum 
+								h3.name Veronica Zepeda
+								p Science Education (2011-2013)
+								p Subsequently: Lecturer, Department of Biochemistry and Molecular Biology, University of Nevada, Reno
+
+							li.alum 
+								h3.name Jessica Walter
+								p Postdoc (2009-2013)
+								p Subsequently: Scientist, Amyris
+
+							li.alum 
+								h3.name Reid Williams
+								p Graduate Student (2006-2013)
+								p Subsequently: Bioscience resident, IDEO
+
+							li.alum 
+								h3.name Maria Borovinskaya
+								p Postdoc (2009-2013)
+
+							li.alum 
+								h3.name Jason Park
+								p Graduate Student (2008-2013)
+								p Subsequently: UCSF MSTP
+
+							li.alum 
+								h3.name Ping (Andy) Wei
+								p Postdoc (2007-2013)
+								p Subsequently: Assistant Professor, Center for Quantitative Biology, Peking University, China
+								p
+									a(href="http://cqb.pku.edu.cn/WeiLab/") Wei Lab website
+
+							li.alum 
+								h3.name Simon Lee
+								p Research Associate
+
+							li.alum 
+								h3.name Zairan Liu
+								p Undergraduate
+								p Subsequently: Graduate Student, iPQB, UCSF
+
+							li.alum 
+								h3.name Mia Morgan
+								p Administrative Manager (2011-2012)
+								p Subsequently: Financial Analyst, Department of Cellular and Molecular Pharmacology, University of California, San Francisco
+
+							li.alum 
+								h3.name Pedro Beltrao
+								p Postdoc (2008-2013)
+
+							li.alum 
+								h3.name Illes Farkas
+								p Postdoc (visitor: 2012)
+								p Subsequently: Senior Research Associate, Statistical and Biological Physics group, Hungarian Academy of Sciences
+								p
+									a(href="http://hal.elte.hu/fij") Personal website
+
+							li.alum 
+								h3.name Angi Chau
+								p Graduate Student (2004-2012)
+								p Subsequently: Director of Bourn Idea Lab, Castilleja School
+
+							li.alum 
+								h3.name Oliver Hoeller
+								p Postdoc (2008-2012)
+								p Subsequently: Postdoctoral Fellow, Weiner Lab, University of California, San Francisco
+
+							li.alum 
+								h3.name Wilson Wong
+								p Postdoc (2007-2012)
+								p Subsequently: Assistant professor, Biomedical Engineering, Boston University
+								p
+									a(href="http://www.bu.edu/wilsonwonglab/") Wong Lab website
+
+							li.alum 
+								h3.name Jacinto Chen
+								p Junior Specialist
+								p Subsequently: Undergraduate, University of California, Berkeley
+
+							li.alum 
+								h3.name Benjamin Rhau
+								p Graduate Student
+
+							li.alum 
+								h3.name Silinda Neou
+								p Associate Specialist
+
+							li.alum 
+								h3.name Raquel Gomes
+								p Science Education
+								p Subsequently: Adjunct Professor, University of San Francisco
+
+							li.alum 
+								h3.name Andrew Horwitz
+								p Postdoc
+								p Subsequently: Scientist, LS9
+
+							li.alum 
+								h3.name Leon Chan
+								p Postdoc
+								p Subsequently: Postdoctoral Fellow, Weis Lab, University of California, Berkeley
+
+							li.alum 
+								h3.name Caleb Bashor
+								p Graduate Student
+								p Subsequently: Postdoctoral Fellow, James J. Collins Lab, Boston University
+
+							li.alum 
+								h3.name Anselm Levskaya
+								p Postdoc
+								p Subsequently: Postdoctoral Fellow, Deisseroth Lab, Stanford University
+
+							li.alum 
+								h3.name Matthew Good
+								p Graduate Student
+								p Subsequently: Postdoctoral Fellow, Heald Lab, University of California, Berkeley
+
+							li.alum 
+								h3.name Angela Won
+								p Graduate Student
+
+							li.alum 
+								h3.name Stacy Fang
+								p Junior Specialist (CPL)
+								p Subsequently: Medical Student, New York Medical College
+
+							li.alum 
+								h3.name Liam Holt
+								p Postdoc
+								p Subsequently: Bowes Research Fellow, University of California, Berkeley
+								p
+									a(href="http://mcb.berkeley.edu/faculty-and-research/fellowships/liam-holt/") 
+
+							li.alum 
+								h3.name Albert Lu
+								p Research Associate
+
+							li.alum 
+								h3.name Aynur Tasdemir
+								p Postdoc
+								p Subsequently: Postdoctoral Fellow, Regeneron Pharmaceuticals
+
+							li.alum 
+								h3.name Sergio Peisajovich
+								p Postdoc
+								p Subsequently: Staff Scientist, Illumina, Inc.
+
+							li.alum 
+								h3.name Noah Helman
+								p Postdoc
+								p Subsequently: Scientist, LS9
+
+							li.alum 
+								h3.name Alice Willis
+								p Administrative Assistant
+								p Subsequently: Administrative Assistant, Weissman Lab, University of California San Francisco
+
+							li.alum
+								h3.name Alex Watters
+								p Postdoc
+								p Subsequently: Scientist, Amgen
+								p awatters74 (at) yahoo.com
+
+							li.alum
+								h3.name Nili Sommovilla
+								p Science Education
+								p Subsequently: Medical Student, University of California San Francisco
+								p nili.sommovilla (at) ucsf.edu
+
+							li.alum
+								h3.name Grace Tang
+								p Undergraduate Student
+								p Subsequently: Student, Bioengineering Graduate Program, Stanford University
+								p gwtang (at) stanford.edu
+
+							li.alum
+								h3.name Farid Ahmad
+								p Postdoc
+
+							li.alum
+								h3.name Nathan Sallee
+								p Graduate Student
+								p Subsequently: Scientist I, Protein Chemistry, Five Prime Therapeutics
+								p nsallee (at) gmail.com
+
+							li.alum
+								h3.name Shude Yan
+								p Postdoc
+								p Subsequently: Researcher, Antibody Engineering, University of California San Francisco
+
+							li.alum
+								h3.name Julie Singleton
+								p Research Associate
+
+							li.alum
+								h3.name Attila Remenyi
+								p Postdoc
+								p Subsequently: Associate Research Professor, Eotvos Lorand University, Budapest, Hungary
+								p remenyi (at) elte.hu
+
+							li.alum
+								h3.name Brian Yeh
+								p Graduate Student
+								p Subsequently: Postdoctoral Fellow, Weiss Lab, Northwestern University
+								p brian.yeh (at) northwestern.edu
+
+							li.alum
+								h3.name Amy Coombs
+								p Research Associate
+
+							li.alum
+								h3.name Keiko Petrosky
+								p Graduate Student
+								p keikopet (at) gmail.com
+
+							li.alum
+								h3.name Brian Hillier
+								p Postdoc
+								p Subsequently: Catalyst Biosciences
+								p brianhillier (at) gmail.com
+
+							li.alum
+								h3.name Anrica Deb
+								p Research Associate
+								p Subsequently: Student, Graduate School of Journalism, University of California
+
+							li.alum
+								h3.name Venizelos Papayannopoulos
+								p Graduate Student
+								p Subsequently: Program Leader Track, Division of Molecular Immunology, MRC National Institute of Medical Research, London
+								p vpapaya (at) nimr.mrc.ac.uk
+
+							li.alum
+								h3.name Roby Bhattacharyya
+								p Graduate Student
+								p Subsequently: Resident, Department of Medicine, Massachusetts General Hospital
+								p rbhattacharyya (at) partners.org
+
+							li.alum
+								h3.name Ethan Mirsky
+								p Research Associate
+								p Subsequently: Biophysics Graduate Program, University of California San Francisco
+								p eamirsky (at) yahoo.com
+
+							li.alum
+								h3.name John Dueber
+								p Graduate Student
+								p Subsequently: Assistant Professor, Department of Bioengineering, University of California, Berkeley
+								p jdueber (at) berkeley.edu
+
+							li.alum
+								h3.name Joseph McNulty
+								p Postdoc
+								p Subsequently: Postdoctoral Fellow, Scot Wolf Lab, University of Massachusetts Worcester
+
+							li.alum
+								h3.name Sang-Hyun Park
+								p Postdoc
+								p Subsequently: Assistant Professor, School of Life Sciences, Seoul National University
+								p biopark (at) snu.ac.kr
+
+							li.alum
+								h3.name Kayam Chak
+								p Research Associate
+								p Subsequently: Graduate Student, Johns Hopkins University
+								p kchak1 (at) jhmi.edu
+
+							li.alum
+								h3.name Ali Zarrinpar
+								p Graduate Student
+								p Subsequently: Resident, Department of Surgery, University of California, Los Angeles
+								p azarrin (at) hotmail.com
+
+							li.alum
+								h3.name Baruch Z. Harris
+								p Graduate Student
+								p Subsequently: Associate, McKinsey & Company
+								p baruchzh (at) hotmail.com
+
+							li.alum
+								h3.name Ken Prehoda
+								p Postdoc
+								p Subsequently: Assistant Professor, Institute of Molecular Biology, University of Oregon
+								p prehoda (at) molbio.uoregon.edu
+								p <a href="http://www.molbio.uoregon.edu/facres/prehoda.html">http://www.molbio.uoregon.edu/facres/prehoda.html</a>
+
+							li.alum
+								h3.name Jessica Scott
+								p Research Associate
+								p Subsequently: Resident, Department of Pediatrics, University of Wisconsin
+								p jscott (at) uwhealth.org
+
+							li.alum
+								h3.name Do Lee
+								p Research Associate
+								p Subsequently: Biosphere 2 Center, Oracle, AZ
+
+							li.alum
+								h3.name Jack Nguyen
+								p Graduate Student
+								p Subsequently: Catalyst Biosciences
+
+
 		
 		include ./components/footer.jade
 		script(type='text/javascript').
