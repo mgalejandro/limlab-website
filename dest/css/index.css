@@ -9919,5 +9919,11 @@ body .affiliations .limlab {
     display: block;
   }
 }
+p a {
+  color: black !important;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 20px;
+}
 
 /*# sourceMappingURL=index.css.map */
