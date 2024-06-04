@@ -1,0 +1,38 @@
+html
+    head
+        title
+        include ../components/people_head.jade
+    body
+        include ../components/header.jade
+        #title.container
+            h1.row.s12
+                span.part2 Sarah | 
+                span.part1 Wasinger
+        #basics.container
+            .row
+                .col.s8
+                    |   <p>sarah.wasinger <img src="images/at.gif" class="at"> ucsf.edu</p>
+                    |   <p><em>Graduate Student</em></p>
+                .col.s4
+                    img.responsive-img.z-depth-1(src="images/sarahwasinger.jpeg")
+            #education
+                h3 Education
+                p 2023-Present
+                .degrees Ph.D., Bioengineering<br/> University of California, San Francisco & Berkeley
+                p 2017-2021
+                .degrees B.S., Molecular Engineering <br/> University of Chicago
+
+                h3 Research Interests
+                p Using computational methods to understand complex biological systems
+
+                h3 Awards
+                p 2024 NSF GRFP
+
+                h3 Publications
+
+                .title Deep learning-enabled design of synthetic orthologs of a signaling protein
+                .authors Xinran Lian, Niksa Praljak, Subu K. Subramanian, <strong>Sarah Wasinger</strong>, Rama Ranganathan, Andrew L. Ferguson
+                .journal <em>bioRxiv<em> 2022.12.21.521443; doi: https://doi.org/10.1101/2022.12.21.521443
+                <br>
+
+        include ../components/footer.jade
