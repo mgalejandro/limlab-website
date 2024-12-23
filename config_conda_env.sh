@@ -3,6 +3,10 @@
 # init conda
 eval "$(conda shell.bash hook)"
 
+# Remove env if needed
+# # conda deactivate
+# conda env remove -n limlab-website
+
 # Create the Conda environment
 conda env create -f environment.yml -v
 
@@ -10,4 +14,4 @@ conda env create -f environment.yml -v
 conda activate limlab-website 
 
 npm install -g grunt-cli@1.5.0
-npm install -g grunt@0.4.5
+npm install grunt@0.4.5 --save-dev
