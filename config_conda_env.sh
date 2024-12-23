@@ -15,3 +15,5 @@ conda activate limlab-website
 
 npm install -g grunt-cli@1.5.0
 npm install grunt@0.4.5 --save-dev
+npm install --save-dev grunt-sass sass
+
