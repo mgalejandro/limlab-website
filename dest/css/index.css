@@ -1,78 +1,19 @@
-/*
-Error: Invalid CSS after "...op-margin: math": expected selector or at-rule, was ".div($gutter-wi..."
-        on line 58 of src/sass/components/_variables.scss
-        from line 9 of src/sass/materialize.scss
-        from line 1 of src/sass/index.scss
+/* Error: Undefined function.
+ *    ,
+ * 59 | $element-bottom-margin: math.div(math.mul($gutter-width, 2), 3) !default;
+ *    |                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *    '
+ *   src/sass/components/_variables.scss 59:34  @import
+ *   src/sass/materialize.scss 9:9              @import
+ *   src/sass/index.scss 1:9                    root stylesheet */
 
-53: 
-54: // Grid Variables
-55: $num-cols: 12 !default;
-56: $gutter-width: 1.5rem !default;
-57: 
-58: $element-top-margin: math.div($gutter-width, 3) !default;
-59: $element-bottom-margin: math.div(math.mul($gutter-width, 2), 3) !default;
-60: 
-61: 
-62: /*** Navbar ***\/
-63: $navbar-height: 64px;
-
-Backtrace:
-src/sass/components/_variables.scss:58
-src/sass/materialize.scss:9
-src/sass/index.scss:1
-/Users/hbhargava/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
-/Users/hbhargava/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1238:in `expected'
-/Users/hbhargava/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:42:in `parse'
-/Users/hbhargava/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/engine.rb:414:in `_to_tree'
-/Users/hbhargava/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/engine.rb:321:in `to_tree'
-/Users/hbhargava/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:323:in `block in visit_import'
-/Users/hbhargava/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/stack.rb:88:in `block in with_import'
-/Users/hbhargava/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-/Users/hbhargava/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/stack.rb:88:in `with_import'
-/Users/hbhargava/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
-/Users/hbhargava/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/hbhargava/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Users/hbhargava/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
-/Users/hbhargava/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-/Users/hbhargava/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
-/Users/hbhargava/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Users/hbhargava/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:325:in `block (2 levels) in visit_import'
-/Users/hbhargava/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:325:in `map'
-/Users/hbhargava/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:325:in `block in visit_import'
-/Users/hbhargava/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/stack.rb:88:in `block in with_import'
-/Users/hbhargava/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-/Users/hbhargava/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/stack.rb:88:in `with_import'
-/Users/hbhargava/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
-/Users/hbhargava/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/hbhargava/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Users/hbhargava/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
-/Users/hbhargava/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-/Users/hbhargava/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
-/Users/hbhargava/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Users/hbhargava/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Users/hbhargava/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
-/Users/hbhargava/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Users/hbhargava/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/Users/hbhargava/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Users/hbhargava/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/Users/hbhargava/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Users/hbhargava/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/Users/hbhargava/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/hbhargava/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/Users/hbhargava/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
-/Users/hbhargava/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Users/hbhargava/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Users/hbhargava/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/Users/hbhargava/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/Users/hbhargava/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:387:in `run'
-/Users/hbhargava/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:63:in `process_result'
-/Users/hbhargava/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
-/Users/hbhargava/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
-/Users/hbhargava/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
-/Users/hbhargava/.rbenv/versions/3.1.2/bin/sass:25:in `load'
-/Users/hbhargava/.rbenv/versions/3.1.2/bin/sass:25:in `<main>'
-*/
-body:before {
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
   white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...op-margin: math\": expected selector or at-rule, was \".div($gutter-wi...\"\A         on line 58 of src/sass/components/_variables.scss\A         from line 9 of src/sass/materialize.scss\A         from line 1 of src/sass/index.scss\A \A 53: \A 54: // Grid Variables\A 55: $num-cols: 12 !default;\A 56: $gutter-width: 1.5rem !default;\A 57: \A 58: $element-top-margin: math.div($gutter-width, 3) !default;\A 59: $element-bottom-margin: math.div(math.mul($gutter-width, 2), 3) !default;\A 60: \A 61: \A 62: /*** Navbar ***/\A 63: $navbar-height: 64px;"; }
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined function.\a    \2577 \a 59 \2502  $element-bottom-margin: math.div(math.mul($gutter-width, 2), 3) !default;\a    \2502                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   src/sass/components/_variables.scss 59:34  @import\a   src/sass/materialize.scss 9:9              @import\a   src/sass/index.scss 1:9                    root stylesheet";
+}

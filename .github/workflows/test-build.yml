@@ -26,10 +26,6 @@ jobs:
       # Step 3: Run the configuration script
       - name: Run config_conda_env.sh
         run: |
-          sudo apt-get update
-          sudo apt-get install ruby
-          sudo apt-get install sass
-          export PATH=$PATH:/usr/local/bin/
           chmod +x ./config_conda_env.sh  # Ensure the script is executable
           ./config_conda_env.sh           # Run the script to set up the environment and Grunt CLI
 
