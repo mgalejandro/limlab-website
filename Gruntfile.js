@@ -40,6 +40,10 @@ module.exports = function (grunt) {
 
 			sass: {
 				dist: {
+					options: {
+						implementation: require('sass'),
+						sourceMap: true
+					},
 					files: [{
 						src: "*.scss", 
 						cwd: "src/sass",

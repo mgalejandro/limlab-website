@@ -35,7 +35,6 @@ $fill-color: #0f9d58 !default;
 $radio-border: #5a5a5a !default;
 
 
-
 /*** Global ***/
 // Media Query Ranges
 $small-screen-up: 601px !default;
@@ -52,13 +51,12 @@ $medium-and-down: "only screen and (max-width : #{$medium-screen})" !default;
 $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width : #{$medium-screen})" !default;
 
 
-
 // Grid Variables
 $num-cols: 12 !default;
 $gutter-width: 1.5rem !default;
 
 $element-top-margin: math.div($gutter-width, 3) !default;
-$element-bottom-margin: math.div($gutter-width*2, 3) !default;
+$element-bottom-margin: math.div(math.mul($gutter-width, 2), 3) !default;
 
 
 /*** Navbar ***/
@@ -67,7 +65,6 @@ $navbar-height-mobile: 56px;
 
 
 /*** SideNav ***/
-
 
 
 /*** Tables ***/
