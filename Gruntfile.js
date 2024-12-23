@@ -40,6 +40,10 @@ module.exports = function (grunt) {
 
 			sass: {
 				dist: {
+					options: {
+						implementation: require('sass'),
+						sourceMap: true
+					},
 					files: [{
 						src: "*.scss", 
 						cwd: "src/sass",
@@ -105,12 +109,13 @@ module.exports = function (grunt) {
 	// DEFAULT TASKS
 	grunt.registerTask('default', ['sass', 'jade', 'cssmin', 'copy']);
 	grunt.registerTask('build', ['sass', 'jade', 'cssmin', 'clean']);
+	grunt.loadNpmTasks('grunt-sass');
 
 	grunt.loadNpmTasks('grunt-replace');
 	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-contrib-connect');
-	grunt.loadNpmTasks('grunt-contrib-sass');
+	// grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-jade');

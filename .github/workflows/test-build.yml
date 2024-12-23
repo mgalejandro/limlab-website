@@ -1,0 +1,50 @@
+name: Test Site Build
+
+on:
+  push:  # Run on pushes to any branch
+    branches:
+      - "**"
+  pull_request:  # Run on pull requests targeting any branch
+    branches:
+      - "**"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the code
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Step 2: Install Miniconda
+      - name: Install Miniconda
+        uses: conda-incubator/setup-miniconda@v2
+        with:
+          auto-update-conda: true
+
+      # Step 3: Run the configuration script
+      - name: Run config_conda_env.sh
+        run: |
+          chmod +x ./config_conda_env.sh  # Ensure the script is executable
+          ./config_conda_env.sh           # Run the script to set up the environment and Grunt CLI
+
+      # Step 4: Clean up the 'dest' directory if it exists
+      - name: Clean 'dest' directory
+        run: |
+          if [ -d "dest" ]; then
+            echo "Removing existing 'dest' directory"
+            rm -rf dest
+          fi
+
+      # Step 5: Build the site with Grunt
+      - name: Build site with Grunt
+        run: grunt
+
+      # Step 6: Verify build success
+      - name: Verify build
+        run: |
+          if [ ! -d "dest" ]; then
+            echo "Build failed: 'dest' directory not created."
+            exit 1
+          fi
