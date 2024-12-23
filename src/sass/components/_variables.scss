@@ -56,7 +56,7 @@ $num-cols: 12 !default;
 $gutter-width: 1.5rem !default;
 
 $element-top-margin: math.div($gutter-width, 3) !default;
-$element-bottom-margin: math.div(math.mul($gutter-width, 2), 3) !default;
+$element-bottom-margin: math.div($gutter-width * 2, 3) !default;
 
 
 /*** Navbar ***/
