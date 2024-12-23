@@ -13,7 +13,8 @@ conda env create -f environment.yml -v
 # Activate the environment
 conda activate limlab-website 
 
-npm install grunt-contrib-sass --save-dev
-npm install -g grunt-cli@1.5.0
-npm install grunt@0.4.5 --save-dev
+npm install
+# npm install grunt-contrib-sass --save-dev
+# npm install -g grunt-cli@1.5.0
+# npm install grunt@0.4.5 --save-dev
 
