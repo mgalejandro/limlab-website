@@ -2959,7 +2959,7 @@ span.badge.new:after {
   height: 4px;
   display: block;
   width: 100%;
-  background-color: #c5ecfe;
+  background-color: rgb(196.7165991903, 236.3684210526, 254.2834008097);
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
@@ -6938,7 +6938,7 @@ small {
   text-transform: uppercase;
 }
 .card a:hover {
-  color: #ffd8a6;
+  color: rgb(255, 215.8586387435, 166);
 }
 .card.small {
   height: 300px;
@@ -7121,7 +7121,7 @@ small {
   width: 15%;
 }
 .tabs li.tab a {
-  color: #ee6e73;
+  color: rgb(238.4339920949, 110.3660079051, 114.8260869565);
   display: block;
   width: 100%;
   height: 100%;
@@ -7233,7 +7233,7 @@ ul.tabs li.tab {
   cursor: pointer;
 }
 .btn:hover, .btn-large:hover {
-  background-color: #39a1f4;
+  background-color: rgb(57.1923076923, 161.4423076923, 244.3076923077);
 }
 
 .btn-floating {
@@ -7279,7 +7279,7 @@ ul.tabs li.tab {
   cursor: pointer;
 }
 .btn-flat.disabled {
-  color: #b3b3b3;
+  color: rgb(178.5, 178.5, 178.5);
 }
 
 .btn-large {
@@ -7619,7 +7619,7 @@ select:focus {
 
 button:focus {
   outline: none;
-  background-color: #51adf6;
+  background-color: rgb(81.3846153846, 172.8846153846, 245.6153846154);
 }
 
 label {
@@ -8329,12 +8329,12 @@ ul.table-of-contents a {
 ul.table-of-contents a:hover {
   color: #a8a8a8;
   padding-left: 19px;
-  border-left: 1px solid #ea4a4f;
+  border-left: 1px solid rgb(234.2411067194, 73.7588932806, 79.347826087);
 }
 ul.table-of-contents a.active {
   font-weight: 500;
   padding-left: 18px;
-  border-left: 2px solid #ea4a4f;
+  border-left: 2px solid rgb(234.2411067194, 73.7588932806, 79.347826087);
 }
 
 @media only screen and (max-width : 992px) {
