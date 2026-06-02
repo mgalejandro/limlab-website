@@ -1,17 +1,32 @@
 #!/bin/bash -l
+set -euo pipefail
 
-# init conda
-eval "$(conda shell.bash hook)"
+# Initialize conda for this shell.
+source "$(conda info --base)/etc/profile.d/conda.sh"
 
-# Remove env if needed
-# conda deactivate
-# conda env remove -n limlab-website
+# To rebuild from scratch, uncomment:
+# conda deactivate || true
+# conda env remove -n limlab-website -y
 
-# Create the Conda environment
-conda env create -f environment.yml -v
+# Create (or update) the conda environment from environment.yml.
+if conda env list | awk '{print $1}' | grep -qx "limlab-website"; then
+  echo "Conda env 'limlab-website' already exists; updating..."
+  conda env update -n limlab-website -f environment.yml --prune
+else
+  conda env create -f environment.yml -v
+fi
 
-# Activate the environment
-conda activate limlab-website 
+# Activate the environment so subsequent npm calls install into it.
+conda activate limlab-website
 
-npm install # install packages according to package.json
+# Install local build dependencies (grunt, plugins, dart-sass, etc.).
+npm install
 
+# Install the grunt CLI inside the conda env's npm prefix so `grunt` is on PATH.
+# This stays scoped to the env and does not pollute the host.
+npm install -g grunt-cli
+
+echo
+echo "Done. To build the site:"
+echo "  conda activate limlab-website"
+echo "  grunt"

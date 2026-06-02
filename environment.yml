@@ -1,5 +1,6 @@
-# Conda environment
-# conda env create -f environment.yml --force -v
+# Conda environment for the Lim Lab website build toolchain.
+# Recreate with: ./config_conda_env.sh
+# Or manually:    conda env create -f environment.yml -v
 
 name: limlab-website
 
@@ -8,5 +9,5 @@ channels:
   - conda-forge
 
 dependencies:
-  - nodejs
-  - ruby
+  - nodejs=22  # LTS; newer majors may break ancient grunt plugins
+  - ruby       # not currently used by the build, retained for helper scripts
